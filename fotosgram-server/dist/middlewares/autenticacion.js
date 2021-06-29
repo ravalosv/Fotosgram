@@ -8,7 +8,7 @@ const token_1 = __importDefault(require("../classes/token"));
 const verificaToken = (req, res, next) => {
     const userToken = req.get('x-token') || '';
     token_1.default.comprobarToken(userToken).then((decoded) => {
-        console.log('Decoded', decoded);
+        //console.log('Decoded', decoded);
         req.usuario = decoded.usuario;
         next();
     })

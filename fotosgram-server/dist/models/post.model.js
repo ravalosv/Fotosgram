@@ -9,9 +9,9 @@ const postSchema = new mongoose_1.Schema({
     mensaje: {
         type: String
     },
-    img: {
-        type: String
-    },
+    imgs: [{
+            type: String
+        }],
     coords: {
         type: String
     },
